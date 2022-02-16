@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Allsober test suite" parallel="tests" thread-count="10">
+ 
+<listeners>
+<listener class-name="com.qa.alsober.testlisteners.ExtentReportListener"></listener>
+</listeners> 
+<test name="Allsoper app home">
+    <classes>      
+      
+     <class name="com.qa.alsober.tests.HomePageTest"/>    
+      
+    </classes>
+
+  </test> <!-- Test -->
+<test name="Allsoper app login">
+    <classes>
+      
+     <class name="com.qa.alsober.tests.LoginPageTest"/>  
+       
+      
+    </classes>
+
+  </test>  
+</suite> <!-- Suite -->
